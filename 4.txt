@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int NOD(int a, int b)
+{
+   while(a!=b)
+   {
+       if(a>b)
+        a=a-b;
+        else
+         b=b-a;
+   }
+    return a;
+}
+int main()
+{
+int x;
+int y;
+
+
+scanf("%d",&x);
+scanf("%d",&y);
+printf(" NOD=%d",NOD(x,y));
+
+    return 0;
+}
